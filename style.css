@@ -1,0 +1,170 @@
+:root {
+	--color-primary: hsl(0, 0%, 98%);
+	--color-secondary: hsl(0, 0%, 100%);
+	--color-text: hsl(200, 15%, 8%);
+	--color-input: hsl(0, 0%, 52%);
+}
+
+.dark-mode {
+	--color-primary: hsl(207, 26%, 17%);
+	--color-secondary: hsl(209, 23%, 22%);
+	--color-text: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--color-primary);
+	color: var(--color-text);
+	font-size: 1.6rem;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+main {
+	padding: 0 8rem;
+}
+
+/* header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 8rem;
+	background-color: var(--color-secondary);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+	font-weight: 800;
+}
+
+.dark-mode-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+.dark-mode-icon {
+	width: 2rem;
+	height: 2rem;
+	background: none;
+}
+
+.dark-mode-btn p {
+	padding-left: 1rem;
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: var(--color-text);
+}
+
+/* input section */
+
+.input-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 4rem 0;
+}
+
+.search-box {
+	display: flex;
+	background-color: var(--color-secondary);
+	align-items: center;
+	width: 40rem;
+	padding: 1rem 2rem;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search-box-icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.search-field {
+	flex: 1;
+	margin-left: 2rem;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	font-size: 1.4rem;
+	color: var(--color-input);
+}
+
+.custom-select {
+	display: flex;
+	position: relative;
+}
+
+.filter-by-region {
+	padding: 1rem 3rem 1rem 1.5rem;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--color-secondary);
+	color: var(--color-text);
+	font-size: 1.4rem;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+	cursor: pointer;
+}
+
+.country-cards-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 30rem;
+	height: 37rem;
+	margin-bottom: 5rem;
+	background-color: var(--color-secondary);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.country-flag {
+	height: 17rem;
+	width: 100%;
+}
+
+.flag-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.country-info {
+	padding: 2.5rem;
+}
+
+.country-name {
+	margin-bottom: 2rem;
+}
+
+.country-info p {
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+.country-info p span {
+	font-weight: 300;
+}
